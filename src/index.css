@@ -22,7 +22,7 @@ body {
 }
 .header {
   grid-area: header;
-  background-color: #203040;
+  background-color: #590222;
   color: #ffffff;
   display: flex;
   justify-content: space-between;
@@ -48,7 +48,7 @@ body {
 }
 .footer {
   grid-area: footer;
-  background-color: #203040;
+  background-color: #590222;
   color: #ffffff;
   display: flex;
   justify-content: center;
@@ -70,9 +70,9 @@ a:hover {
 .products li {
   list-style-type: none;
   padding: 0;
-  flex: 0 1 34rem;
+  flex: 0 1 20rem;
   margin: 1rem;
-  height: 50rem;
+  height: 40rem;
   border-bottom: 0.1rem #c0c0c0 solid;
 }
 .product {
@@ -94,8 +94,8 @@ a:hover {
   font-weight: bold;
 }
 .product-image {
-  max-width: 34rem;
-  max-height: 34rem;
+  max-width: 30rem;
+  max-height: 30rem;
 }
 .product-rating {
   margin-bottom: 1rem;
@@ -142,4 +142,53 @@ a:hover {
   display: flex;
   justify-content: space-around;
   align-items: flex-start;
+  flex-wrap: wrap;
+  padding: 1rem;
+}
+.details-image {
+  flex: 2 1 30rem;
+}
+.details-image img {
+  max-width: 30rem;
+  widows: 100%;
+}
+.details-info {
+  flex: 1 1 30rem;
+}
+.details-action {
+  flex: 1 1 30rem;
+}
+.details-info ul,
+.details-action ul {
+  list-style: none;
+  padding: 0;
+}
+.details-info li,
+.details-action li {
+  margin-bottom: 1rem;
+}
+.back-to-result {
+  padding: 1rem;
+}
+.details-action {
+  border: 0.1rem #000000 solid;
+  border-radius: 0.5rem;
+  background-color: #f8f8f8;
+  padding: 1rem;
+}
+.details-action ul li:last-child {
+  display: flex;
+  flex-direction: column;
+}
+.button {
+  padding: 1rem;
+  border: 0.1rem #808080 solid;
+  cursor: pointer;
+  border-radius: 0.5rem;
+}
+.button:hover {
+  border: 0.1rem #404040 solid;
+}
+.button.primary {
+  background: #f0c040;
 }
